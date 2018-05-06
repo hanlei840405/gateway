@@ -1,0 +1,14 @@
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8101/eureka/
+spring:
+  application:
+    name: gateway
+zuul:
+  routes:
+    system:
+          path: /system/**
+          serviceId: system
+server:
+  port: 8111
