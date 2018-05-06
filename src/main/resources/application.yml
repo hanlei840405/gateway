@@ -7,6 +7,9 @@ spring:
     name: gateway
 zuul:
   routes:
+    sso:
+          path: /sso/**
+          serviceId: sso
     system:
           path: /system/**
           serviceId: system
