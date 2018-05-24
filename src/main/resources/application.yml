@@ -8,11 +8,11 @@ spring:
 zuul:
   routes:
     sso:
-          path: /sso/**
-          serviceId: sso
+      path: /sso/**
+      serviceId: sso
     system:
-          path: /system/**
-          serviceId: system
-          sensitive-headers: Cookie,Set-Cookie
+      path: /system/**
+      serviceId: system
+      custom-sensitive-headers: true
 server:
   port: 8111
