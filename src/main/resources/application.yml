@@ -13,6 +13,7 @@ zuul:
     system:
           path: /system/**
           serviceId: system
-          sensitive-headers: Cookie,Set-Cookie
+          sensitive-headers:
+          custom-sensitive-headers: true
 server:
   port: 8111
